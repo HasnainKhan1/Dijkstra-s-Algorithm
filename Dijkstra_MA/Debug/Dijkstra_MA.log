@@ -1,0 +1,59 @@
+﻿  main.cpp
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstddef(226): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstddef(225): note: while compiling class template member function 'bool std::equal_to<_Kty>::operator ()(const _Ty &,const _Ty &) const'
+          with
+          [
+              _Kty=Vertex,
+              _Ty=Vertex
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xhash(119): note: see reference to function template instantiation 'bool std::equal_to<_Kty>::operator ()(const _Ty &,const _Ty &) const' being compiled
+          with
+          [
+              _Kty=Vertex,
+              _Ty=Vertex
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\type_traits(462): note: see reference to class template instantiation 'std::equal_to<_Kty>' being compiled
+          with
+          [
+              _Kty=Vertex
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(264): note: see reference to class template instantiation 'std::is_empty<_Ty1>' being compiled
+          with
+          [
+              _Ty1=std::equal_to<Vertex>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\unordered_map(23): note: see reference to class template instantiation 'std::_Uhash_compare<_Kty,_Hasher,_Keyeq>' being compiled
+          with
+          [
+              _Kty=Vertex,
+              _Hasher=std::hash<Vertex>,
+              _Keyeq=std::equal_to<Vertex>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xhash(152): note: see reference to class template instantiation 'std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>' being compiled
+          with
+          [
+              _Kty=Vertex,
+              _Ty=int,
+              _Hasher=std::hash<Vertex>,
+              _Keyeq=std::equal_to<Vertex>,
+              _Alloc=std::allocator<std::pair<const Vertex,int>>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\unordered_map(86): note: see reference to class template instantiation 'std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>' being compiled
+          with
+          [
+              _Kty=Vertex,
+              _Ty=int,
+              _Hasher=std::hash<Vertex>,
+              _Keyeq=std::equal_to<Vertex>,
+              _Alloc=std::allocator<std::pair<const Vertex,int>>
+          ]
+  c:\users\hasnain\documents\fall 2016\cpts223\dijkstra_ma\dijkstra_ma\graph.h(22): note: see reference to class template instantiation 'std::unordered_map<Vertex,int,std::hash<Vertex>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' being compiled
+          with
+          [
+              _Kty=Vertex,
+              _Ty=int
+          ]
+c:\users\hasnain\documents\fall 2016\cpts223\dijkstra_ma\dijkstra_ma\vertex.h(85): warning C4717: 'operator>': recursive on all control paths, function will cause runtime stack overflow
+c:\users\hasnain\documents\fall 2016\cpts223\dijkstra_ma\dijkstra_ma\vertex.h(80): warning C4717: 'operator<': recursive on all control paths, function will cause runtime stack overflow
+c:\users\hasnain\documents\fall 2016\cpts223\dijkstra_ma\dijkstra_ma\graph.h(72): warning C4715: 'Graph::computeShortestPath': not all control paths return a value
+  Dijkstra_MA.vcxproj -> C:\Users\hasnain\Documents\Fall 2016\Cpts223\Dijkstra_MA\Debug\Dijkstra_MA.exe
